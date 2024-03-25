@@ -42,32 +42,69 @@ body {
   gap: 56px;
 
   position: absolute;
-  left:157px;
-  top:246px;
+  left: 157px;
+  top: 246px;
 }
 
-.text_container h1{
+.text_container h1 {
   color: var(--text-color);
   font-size: var(--heading-font-size);
   font-weight: var(--heading-font-weight);
 }
 
-.text_container p{
+.text_container p {
   color: var(--text-color);
   font-size: var(--text-font-size);
   font-weight: var(--text-font-weight);
+
+  margin: 24px auto;
 }
 
-.buttons_container a{
+.buttons_container a {
+  text-decoration: none;
+
   color: var(--button-text-color);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
-  background-color: var(--button-bg-color);
+  background: var(--button-bg-color);
+
   padding: 12px 24px;
-  border-radius:999px;
+  border-radius: 999px;
+  transition: background 0.5s;
 }
 
-.buttons_container .voltar{
- margin-right: 16px
+.buttons_container a:hover {
+  background: var(--button-bg-color-hover);
+  color: var(--button-text-color);
+  transition: background 0.5s;
 }
+
+.buttons_container .voltar {
+  margin-right: 16px
+}
+
+
 /*404 Container settings*/
+
+.container_404{
+  width: 408;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8;
+
+  position: absolute;
+  right:250px;
+  bottom:342px;
+}
+
+.container_404 img{
+  width: 80px;
+}
+
+.container_404 lottie-player{
+  width: 230px;
+}
+
+/*Media queries*/
