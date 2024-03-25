@@ -6,20 +6,68 @@
 }
 
 /*Root Settings*/
-:root{
-  --heading-font-size:40px;
-  --heading-font-weight:700;
-  --text-font-size:20px;
-  --text-font-weight:300;
-  --text-color:#d6d6f2;
+:root {
+  --heading-font-size: 40px;
+  --heading-font-weight: 700;
+  --text-font-size: 20px;
+  --text-font-weight: 300;
+  --text-color: #d6d6f2;
 
-  --button-font-size:14px;
-  --button-font-weight:500;
-  --button-bg-color:#151557;
-  --button-bg-color-hover:#212187;
-  --button-text-color:#e2e2f5;
+  --button-font-size: 14px;
+  --button-font-weight: 500;
+  --button-bg-color: #151557;
+  --button-bg-color-hover: #212187;
+  --button-text-color: #e2e2f5;
+
+  --bg-url: url(assets/img/Background.png);
 }
 
+/*Body Font*/
 body * {
   font-family: "Outfit", sans-serif;
 }
+
+/*Body settings*/
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+}
+
+/*Text Container Settings*/
+.main_container {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 56px;
+
+  position: absolute;
+  left:157px;
+  top:246px;
+}
+
+.text_container h1{
+  color: var(--text-color);
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+}
+
+.text_container p{
+  color: var(--text-color);
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+}
+
+.buttons_container a{
+  color: var(--button-text-color);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  background-color: var(--button-bg-color);
+  padding: 12px 24px;
+  border-radius:999px;
+}
+
+.buttons_container .voltar{
+ margin-right: 16px
+}
+/*404 Container settings*/
