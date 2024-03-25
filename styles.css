@@ -1,0 +1,25 @@
+/* CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Root Settings*/
+:root{
+  --heading-font-size:40px;
+  --heading-font-weight:700;
+  --text-font-size:20px;
+  --text-font-weight:300;
+  --text-color:#d6d6f2;
+
+  --button-font-size:14px;
+  --button-font-weight:500;
+  --button-bg-color:#151557;
+  --button-bg-color-hover:#212187;
+  --button-text-color:#e2e2f5;
+}
+
+body * {
+  font-family: "Outfit", sans-serif;
+}
